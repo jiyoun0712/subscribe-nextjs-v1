@@ -18,7 +18,7 @@ const Logo = () => {
       <LinkStyled href="/">
         {customizer.activeMode === "dark" ? (
           <Image
-            src="/images/logos/light-logo.svg"
+            src="https://image.godpeople.com/common/ci/ci_godpeople_cc_dark.svg"
             alt="logo"
             height={customizer.TopbarHeight}
             width={174}
@@ -26,7 +26,7 @@ const Logo = () => {
           />
         ) : (
           <Image
-            src={"/images/logos/dark-logo.svg"}
+            src={"https://image.godpeople.com/common/ci/ci_godpeople_cc_dark.svg"}
             alt="logo"
             height={customizer.TopbarHeight}
             width={174}
@@ -41,7 +41,7 @@ const Logo = () => {
     <LinkStyled href="/">
       {customizer.activeMode === "dark" ? (
         <Image
-          src="/images/logos/dark-rtl-logo.svg"
+          src="https://image.godpeople.com/common/ci/ci_godpeople_cc_dark.svg"
           alt="logo"
           height={customizer.TopbarHeight}
           width={174}
@@ -49,7 +49,7 @@ const Logo = () => {
         />
       ) : (
         <Image
-          src="/images/logos/light-logo-rtl.svg"
+          src="https://image.godpeople.com/common/ci/ci_godpeople_cc_dark.svg"
           alt="logo"
           height={customizer.TopbarHeight}
           width={174}
