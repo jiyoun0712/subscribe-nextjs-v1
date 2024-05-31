@@ -101,6 +101,17 @@ const BlogDetail = () => {
     return () => clearTimeout(timer);
   }, []);
 
+
+  // 개행 문자를 <br />로 변환하는 함수
+  const convertNewlineToBreak = (text: string) => {
+    return text.split('\n').map((str, index) => (
+      <React.Fragment key={index}>
+        {str}
+        <br />
+      </React.Fragment>
+    ));
+  };
+  
   return (
     <Box>
       <Breadcrumb title="Blog Detail" items={BCrumb} />
@@ -187,17 +198,9 @@ const BlogDetail = () => {
               </CardContent>
               <Divider />
               <CardContent>
-                <Typography variant="h2">Title of the paragraph</Typography>
+                <Typography variant="h2">Title of the paragraph 2</Typography>
                 <p>
-                  But you cannot figure out what it is or what it can do. MTA
-                  web directory is the simplest way in which one can bid on a
-                  link, or a few links if they wish to do so. The link directory
-                  on MTA displays all of the links it currently has, and does so
-                  in alphabetical order, which makes it much easier for someone
-                  to find what they are looking for if it is something specific
-                  and they do not want to go through all the other sites and
-                  links as well. It allows you to start your bid at the bottom
-                  and slowly work your way to the top of the list.
+                {convertNewlineToBreak(post?.content)}
                 </p>
                 <p>
                   Gigure out what it is or what it can do. MTA web directory is

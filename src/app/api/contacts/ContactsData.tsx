@@ -46,7 +46,7 @@ export const ContactList: ContactType[] = [
     email: 'Ziemer234@claimab.com',
     address: '930 Fruit Ave, Farrell, PA, 16121',
     notes: chance.paragraph({ sentences: 2 }),
-    frequentlycontacted: true,
+    frequentlycontacted: false,
     starred: false,
     deleted: false,
   },

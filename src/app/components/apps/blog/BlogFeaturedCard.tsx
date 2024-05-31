@@ -46,6 +46,7 @@ const BlogFeaturedCard = ({ post, index }: Btype) => {
     .toLowerCase()
     .replace(/ /g, '-')
     .replace(/[^\w-]+/g, '');
+  
   const mainPost = index === 0;
 
   const CoverImgBg = styled(BlankCard)({
